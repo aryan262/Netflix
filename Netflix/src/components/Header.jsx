@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <Container className='flex a-center j-between'>
       <div className='logo'>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="Weak or No Internet Connection" />
       </div>
       <button onClick={()=>navigate(props.login?"/login":"/signup")}>{props.login?"Log In":"Sign Up"}</button>
     </Container>
@@ -18,6 +18,7 @@ const Container = styled.div`
   .logo{
     img{
       height:5rem;  
+      cursor:pointer;
     }
   }
   button{

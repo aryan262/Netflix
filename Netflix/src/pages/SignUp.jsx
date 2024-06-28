@@ -39,12 +39,11 @@ function SignUp() {
                     {
                         showPassword && <input type="password" placeholder='password' name='password' value={formValues.password} onChange={(e)=>setformValues({...formValues, [e.target.name]:e.target.value})}/>
                     }
-                    {!showPassword && (
+                    {!showPassword ? (
                         <button onClick={() => setshowPassword(true)}>Get Started</button>
-                    )}
-                    {/* <button onClick={()=>setshowPassword(true)}>Get Started</button> */}
+                    ):<button onClick={handleSignIn}>Sign Up</button>
+                    }
                 </div>
-                <button onClick={handleSignIn}>Sign Up</button>
             </div>
         </div>
     </Container>

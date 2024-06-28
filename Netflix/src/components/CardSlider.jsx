@@ -64,7 +64,7 @@ const Container =styled.div`
             top:0;
             bottom:0;
             width:50;
-            transition:0.3s ease-in-out;
+            transition:0.1s ease-in-out;
             svg{
                 font-size:2rem;
             }

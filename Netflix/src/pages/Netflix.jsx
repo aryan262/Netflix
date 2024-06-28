@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import Navbar from 'D:/Netflix/Netflix/src/components/Navbar.jsx'
+import Navbar from '../components/Navbar.jsx'
 import backgroundImage from '../assets/home.jpg'
 import movielogo from '../assets/homeTitle.webp';
 import { FaPlay } from 'react-icons/fa';
@@ -25,14 +25,12 @@ function Netflix() {
     if(genresLoaded){
       dispatch(fetchMovies({type:"all"}))
     }
-  });
+  },[genresLoaded]);
 
   window.onscroll = ()=>{
     setIsScrolled(window.pageYOffset===0?false:true);
     return ()=> (window.onscroll = null)
   }
-
-  // console.log(movies);
 
   return (
     <Container>

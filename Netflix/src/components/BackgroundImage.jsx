@@ -5,7 +5,7 @@ import background from "../assets/login.jpg";
 export default function BackgroundImage() {
   return (
     <Container>
-      <img src={background} alt="background" />
+      <img src={background} alt="Weak or No Internet Connection" />
     </Container>
   );
 }
